@@ -4,6 +4,8 @@ var app = express();
 
 app.use(express.static('public'));
 
-app.listen(5000, function(){
-	console.log('Express Server is up on port 5000');
+var PORT = process.env.PORT || 5000;
+
+app.listen(PORT, function(){
+	console.log('Express Server is up on port ' + PORT);
 })
