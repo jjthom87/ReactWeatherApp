@@ -17,8 +17,9 @@ var Main = (props) => {
 	return (
 		<div>
 			<Nav/>
-			<h2>Main Component</h2>
+			<h2>Main</h2>
 			{props.children}
+			<p>Welcome to the React Weather App</p>
 		</div>
 	)
 }
