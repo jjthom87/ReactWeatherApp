@@ -10,6 +10,9 @@ var Examples = require('Examples');
 require('style!css!foundation-sites/dist/foundation.min.css');
 $(document).foundation();
 
+//app css
+require('style!css!sass!applicationStyles')
+
 // var objOne = {
 // 	name: 'Jared',
 // 	location: 'Philadelphia'	
@@ -22,6 +25,7 @@ $(document).foundation();
 
 // console.log(objTwo);
 
+//calls all of the files here and renders to the html page
 ReactDOM.render(
 	<Router history={hashHistory}>
 		<Route path="/" component={Main}>
